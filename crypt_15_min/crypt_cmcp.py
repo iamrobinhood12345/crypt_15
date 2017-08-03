@@ -33,7 +33,7 @@ for i in range(1, len(tr_tags)):
     coins_dict[symbol] = [market_cap_rank, name, market_cap, price, circulating_supply, volume, hour_percent_d, day_percent_d, week_percent_d]
 
 utc_time = datetime.now(timezone('UTC')).strftime("%Y%m%d-%H%M%S")
-filename = '/Users/ben/code/crypt_scrp/crypt_15_min/data/cr_' + utc_time + '.csv'
+filename = '/home/ubuntu/crypt_15/crypt_15_min/data/cr_' + utc_time + '.csv'
 
 with open(filename, 'w+') as csv_file:
     csv_writer = writer(csv_file)
